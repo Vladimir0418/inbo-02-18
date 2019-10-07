@@ -1,0 +1,35 @@
+kniga.java
+
+package com.company;
+
+public class kniga {
+    String nazvanee;
+    String avtor;
+    int kolvostr;
+    int godvep;
+}
+
+Main.Java
+package com.company;
+        import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner zap = new Scanner(System.in);
+        kniga a = new kniga();
+
+        System.out.println("¬ведите название книги");
+        a.nazvanee = zap.nextLine();
+        System.out.println("¬ведите автора");
+        a.avtor = zap.nextLine();
+        System.out.println("¬ведите количество страниц в книге");
+        a.kolvostr = zap.nextInt();
+        System.out.println("¬ведите год выпуска");
+        a.godvep = zap.nextInt();
+        System.out.println("название книги:" + a.nazvanee);
+        System.out.println("кол-во страниц:" + a.kolvostr);
+        System.out.println("автор:" + a.avtor);
+        System.out.println("год выпуска:" + a.godvep);
+    }
+}
